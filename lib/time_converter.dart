@@ -6,7 +6,7 @@ class TimeConverter {
   String getInput() {
     Utils.clearScreen();
 
-    print('Masukan bilangan : ');
+    print('Masukan waktu (Ex: 12:00:00 PM) : ');
     String? input = stdin.readLineSync()!;
 
     return input;

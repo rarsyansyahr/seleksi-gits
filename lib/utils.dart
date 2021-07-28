@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:seleksi_gits/email_checker.dart';
 import 'package:seleksi_gits/hello_world.dart';
 import 'package:seleksi_gits/time_converter.dart';
+import 'package:seleksi_gits/word_reverser.dart';
 
 class Utils {
   static void clearScreen() {
@@ -46,7 +47,8 @@ class Utils {
         break;
 
       case 4:
-        print('Aplikasi 4');
+        var wordReverser = WordReverser();
+        wordReverser.printWords();
         break;
 
       case 5:
