@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:seleksi_gits/email_checker.dart';
 import 'package:seleksi_gits/hello_world.dart';
 
 class Utils {
@@ -34,7 +35,8 @@ class Utils {
         break;
 
       case 2:
-        print('Aplikasi 2');
+        var emailChecker = EmailChecker();
+        emailChecker.printValidation();
         break;
 
       case 3:
