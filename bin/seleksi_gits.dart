@@ -1,5 +1,5 @@
-import 'package:seleksi_gits/seleksi_gits.dart' as seleksi_gits;
+import 'package:seleksi_gits/utils.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${seleksi_gits.calculate()}!');
+  Utils.showMenu();
 }
