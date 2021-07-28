@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:seleksi_gits/email_checker.dart';
 import 'package:seleksi_gits/hello_world.dart';
+import 'package:seleksi_gits/time_converter.dart';
 
 class Utils {
   static void clearScreen() {
@@ -40,7 +41,8 @@ class Utils {
         break;
 
       case 3:
-        print('Aplikasi 3');
+        var timeConverter = TimeConverter();
+        timeConverter.printTimeAfterConvert();
         break;
 
       case 4:
