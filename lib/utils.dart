@@ -1,7 +1,9 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:seleksi_gits/email_checker.dart';
 import 'package:seleksi_gits/hello_world.dart';
+import 'package:seleksi_gits/palindrom_checker.dart';
 import 'package:seleksi_gits/time_converter.dart';
 import 'package:seleksi_gits/word_reverser.dart';
 
@@ -52,12 +54,24 @@ class Utils {
         break;
 
       case 5:
-        print('Aplikasi 5');
+        var palindromChecker = PalindromChecker();
+        palindromChecker.printWords();
         break;
 
       default:
         print('\nMaaf, pilihan tidak tersedia..');
         break;
     }
+
+    retry();
+  }
+
+  static void retry() {
+    print('\n\nCoba lagi ? : (y/n)');
+    String? pilihan = stdin.readLineSync()!;
+
+    (pilihan == 'y' || pilihan == 'Y')
+        ? showMenu()
+        : print('\nTerimakasih telah menggunakan Aplikasi Kami.. :)');
   }
 }

@@ -6,6 +6,8 @@ class WordReverser {
   String getInput() {
     Utils.clearScreen();
 
+    print('\t*** Aplikasi Word Reverser ***\n\n');
+
     print('Masukan Kalimat : ');
     String? input = stdin.readLineSync()!;
 

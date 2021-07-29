@@ -20,6 +20,8 @@ class HelloWorld {
   int getInput() {
     Utils.clearScreen();
 
+    print('\t*** Aplikasi Hello World ***\n\n');
+
     print('Masukan bilangan : ');
     int? input = int.parse(stdin.readLineSync()!);
 

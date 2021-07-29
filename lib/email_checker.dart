@@ -6,6 +6,8 @@ class EmailChecker {
   String getInput() {
     Utils.clearScreen();
 
+    print('\t*** Aplikasi Email Checker ***\n\n');
+
     print('Masukan alamat email : ');
     String? email = stdin.readLineSync()!;
 
@@ -26,9 +28,9 @@ class EmailChecker {
     bool? emailValid = validation();
 
     if (emailValid) {
-      print('Email Anda valid..');
+      print('\nEmail Anda valid..');
     } else {
-      print('Maaf, email tidak valid..');
+      print('\nMaaf, email tidak valid..');
     }
   }
 }
